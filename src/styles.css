@@ -1,1 +1,140 @@
 /* You can add global styles to this file, and also import other style files */
+
+HTML {
+    height: 100%;
+    min-height: 100%
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: rgb(208,63,251);
+    background: -moz-radial-gradient(circle, rgba(208,63,251,1) 0%, rgba(70,107,252,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(208,63,251,1) 0%, rgba(70,107,252,1) 100%);
+    background: radial-gradient(circle, rgba(208,63,251,1) 0%, rgba(70,107,252,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d03ffb",endColorstr="#466bfc",GradientType=1);
+    color: #eee;
+    font-family: "Poppins";
+}
+
+nav  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+nav ul {
+    margin: 0px;
+    padding-top: 10px;
+}
+
+nav ul li a {
+    color: #eee;
+    text-decoration: none;
+    
+}
+nav ul:first-of-type li a {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+nav ul:last-of-type li {
+    margin-right: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+header {
+    height: 430px;
+}
+
+header div{
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+header div h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+    margin-bottom: -10px;
+}
+header div img {
+    position: absolute;
+    right: 0px;
+    top: -140px;
+    width: 100%;
+    max-width: 700px;
+}
+.main {
+    width: 80%;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: #eee;
+    padding: 10px;
+    color: #222;
+    text-align: center;
+}
+.main img {
+    margin: 0 auto;
+    width: 80%;
+}
+
+.main p {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.logout {
+    background: #4A00E0;
+    color: #eee;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+form {
+    background: #eee;
+    color: #222;
+    width: 50%;
+    margin: 0 auto 50px auto;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    }
+form p {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+form label, form input {
+    display: block;
+    margin: 10px auto;
+}
+
+form input {
+    border: none;
+    background: none;
+    border-bottom: 1px solid #222;
+    padding: 10px;
+    width: 60%;
+text-align: center;
+font-size: 1.2rem;
+}
+
+form input[type="submit"]{
+   margin-top: 20px;
+   width: 30%;
+   border: none;
+   background: #8E2DE2;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   color: #eee;
+   padding: 12px;
+   font-size: 1.2rem;
+   border-radius: 4px; 
+}

@@ -1,0 +1,11 @@
+
+<form (ngSubmit)="login(loginForm.value)" [formGroup]="loginForm">
+  <p>Login with Email and Password.</p>
+  <label for="email">Email:</label>
+  <input type="email" name="email" formControlName="email">
+
+  <label for="password">Password:</label>
+  <input type="password" name="password" formControlName="password">
+
+  <input type="submit" [disabled]="!loginForm.valid" value="Log In">
+</form> 
